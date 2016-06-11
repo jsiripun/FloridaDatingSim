@@ -1,0 +1,30 @@
+???, "Pardon me.", 1, R, 0
+???, "Do you mind if I sit here?", 1, R, 0
+"Not at all, go ahead.", "Only if you mind I sit here.", "I do. Go away.", Q, 0
+Bella, "Thanks! My name is Isabella. Bella for short.", 1, R, 2		// not at all go ahead
+Bella, "Hahaha, definitely not.", 1, R, 0							// only if you mind I sit here
+Bella, "Wow, you remind me of my uncle!", 1, R, 0					// I do. Go away.
+Chris, "My name is Christian. Chris for short.", 0, L, 0
+Bella, "Why are you headed to Miami?", 1, R, 0
+Chris, "I'm coming back to visit my family.", 0, L, 0
+Chris, "What about you?", 0, L, 0
+Bella, "Oh! Me too! I'm coming to visit my Uncle Ricardo.", 1, R, 0
+Bella, "He actually just got out of jail recently.", 1, R, 0
+
+"Staying at home", "Watching Dogs", "Basketball", Q, 0
+Bobert, "Oh, I love staying at home", 0, R, 2
+Bobert, "Totes cute, dogs are great", 0, R, 4
+Bobert, "BBAAAAAAAAAALLLL", 0, R, 5
+Kanye, "Oh, I lied. I like being outside", 1, L, 0
+Bobert, "Oh..", 0, R, 0
+Kanye, "This is awk", 1, L, 5
+Kanye, "omg I looove dogs", 1, L , 0
+Bobert, "samsies", 0, R, 5
+Kanye, "I see you're a fan", 1, L, 0
+Bobert, "lol no", 0, R, 0
+Bobert, "byeee bitch", 0, R, 5
+Kanye, "k.. gonna go", 1, L, 0
+Kanye, "*leaves*", 1, L, 3
+Kanye, "wanna date?", 1, L, 0
+Bobert, "Heck yeah", 0, R, 0
+Bobert, "*YOU GOT THE DATE*", 0, R, 0
