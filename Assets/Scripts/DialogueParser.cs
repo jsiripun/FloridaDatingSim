@@ -118,7 +118,7 @@ public class DialogueParser : MonoBehaviour {
 
     void LoadDialogue(string filename)
     {
-        string file = "Assets/Dialogue/" + filename;
+        string file = "Assets/Resources/Dialogue/" + filename;
         string line;
         StreamReader r = new StreamReader(file);
 
@@ -165,19 +165,19 @@ public class DialogueParser : MonoBehaviour {
         for(int i = 0; i < lines.Count; i++)
         {
             string imageName = lines[i].name;
-            if(imageName != "???")
+            if(imageName == "???")
             {
-                Sprite image = (Sprite)Resources.Load("Sprites/" + imageName, typeof(Sprite));
+                Sprite unknown = (Sprite)Resources.Load("Sprites/Characters/Chris1", typeof(Sprite));
+                if (!images.Contains(unknown))
+                    images.Add(unknown);
+            }
+            else
+            {
+                Sprite image = (Sprite)Resources.Load("Sprites/Characters/" + imageName, typeof(Sprite));
                 if (!images.Contains(image))
                 {
                     images.Add(image);
                 }
-            }
-            else
-            {
-                Sprite unknown = (Sprite)Resources.Load("Sprites/Unknown", typeof(Sprite));
-                if(!images.Contains(unknown))
-                    images.Add(unknown);
             }
         }
     }

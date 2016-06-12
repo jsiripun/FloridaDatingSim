@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class Player : MonoBehaviour {
 
+    /*
     public List<string> allMyBoos = new List<string>();
     public bool booBobert;
 
@@ -41,4 +42,6 @@ public class Player : MonoBehaviour {
             allMyBoos.Remove(booName);
         }
     }
+
+    */
 }
