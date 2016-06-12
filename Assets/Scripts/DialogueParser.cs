@@ -21,14 +21,16 @@ public class DialogueParser : MonoBehaviour {
         public string pose;
         public string position;
         public int lineJump;
+        public int relationshipNum;
 
-        public DialogueLine(string n, string c, string p, string pos, int lj)
+        public DialogueLine(string n, string c, string p, string pos, int lj, int relnum)
         {
             name = n;
             content = c;
             pose = p;
             position = pos;
             lineJump = lj;
+            relationshipNum = relnum;
         }
     }
 
@@ -130,7 +132,7 @@ public class DialogueParser : MonoBehaviour {
                 if (line != null)
                 {
                     string[] line_values = SplitCsvLine(line);
-                    DialogueLine line_entry = new DialogueLine(line_values[0], line_values[1], line_values[2], line_values[3], int.Parse(line_values[4]));
+                    DialogueLine line_entry = new DialogueLine(line_values[0], line_values[1], line_values[2], line_values[3], int.Parse(line_values[4]), int.Parse(line_values[5]));
                     lines.Add(line_entry);
                 }
             } while (line != null);

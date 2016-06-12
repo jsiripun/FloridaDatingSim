@@ -4,6 +4,10 @@ using System.Collections.Generic;
 
 public class Player : MonoBehaviour {
 
+    public static int relationshipLvlBella;
+
+
+
     /*
     public List<string> allMyBoos = new List<string>();
     public bool booBobert;

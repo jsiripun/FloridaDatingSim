@@ -88,11 +88,12 @@ public class DialogueBox : MonoBehaviour {
         position = parser.GetPosition(lineNum);
         lineJump = parser.GetLineJump(lineNum);
 
-        
+        /*
         if(dialogue == "*YOU GOT THE DATE*")
         {
-            playa.setBoo(true, name);
+            //playa.setBoo(true, name);
         }
+        */
             
 
         DisplayImages();
