@@ -117,6 +117,13 @@ public class DialogueParser : MonoBehaviour {
         return "";
     }
    
+    public int GetRelationshipNum(int lineNumber)
+    {
+        if (lineNumber < lines.Count)
+            return lines[lineNumber].relationshipNum;
+
+        return 0;
+    }
 
     void LoadDialogue(string filename)
     {
@@ -164,6 +171,8 @@ public class DialogueParser : MonoBehaviour {
 
     void LoadImages()
     {
+        // currently only loads the sprites that will be used in that script
+        // other option is load all sprites.. then hardcore each into the dialogue
         for(int i = 0; i < lines.Count; i++)
         {
             string imageName = lines[i].name;

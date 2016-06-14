@@ -4,48 +4,12 @@ using System.Collections.Generic;
 
 public class Player : MonoBehaviour {
 
-    public static int relationshipLvlBella;
+    public static int relationshipLvlBella = 0;
 
-
-
-    /*
-    public List<string> allMyBoos = new List<string>();
-    public bool booBobert;
-
-    void Start()
+    public void addRelationshipNum(string relName, int relNum)
     {
-        booBobert = false;
+        if (relName == "Bella")
+            relationshipLvlBella += relNum;
+        
     }
-
-
-    public string getBooStatusOf(string booName)
-    {
-
-        if (allMyBoos.Contains(booName))
-            return "You hooked it up with " + booName + "!";
-        else
-            return "You messed it up with " + booName + "... way to go slick";
-    }
-
-    public void getAllBooStatus()
-    {
-        foreach(string boo in allMyBoos)
-        {
-
-        }
-    }
-
-    public void setBoo(bool gotBoo, string booName)
-    {
-        if (gotBoo)
-        {
-            allMyBoos.Add(booName);
-        }
-        else
-        {
-            allMyBoos.Remove(booName);
-        }
-    }
-
-    */
 }

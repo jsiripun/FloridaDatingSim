@@ -10,6 +10,7 @@ public class DialogueBox : MonoBehaviour {
     public Sprite pose;
     public string position;
     public int lineJump;
+    public int relNum;
 
     // for question options
     private string optionZero;
@@ -87,14 +88,10 @@ public class DialogueBox : MonoBehaviour {
         pose = parser.GetPose(lineNum);
         position = parser.GetPosition(lineNum);
         lineJump = parser.GetLineJump(lineNum);
+        relNum = parser.GetRelationshipNum(lineNum);
 
-        /*
-        if(dialogue == "*YOU GOT THE DATE*")
-        {
-            //playa.setBoo(true, name);
-        }
-        */
-            
+        // add relationship points
+        playa.addRelationshipNum(name, relNum);  
 
         DisplayImages();
         coroutine = TypeText();

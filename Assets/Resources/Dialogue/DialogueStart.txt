@@ -4,8 +4,8 @@ Chris, "Another long train ride.", 0, L, 0, 0
 ???, "Do you mind if I sit here?", 0, R, 0, 0
 "Not at all, go ahead.", "Only if you mind I sit here.", "I do. Go away.", Q, 0, 0
 Bella, "Thanks! My name is Isabella. Bella for short.", 1, R, 2, 1
-Bella, "Hahaha, definitely not.", 1, R, 0, 1
-Bella, "Wow, you remind me of my uncle!", 1, R, 0, 0
+Bella, "Hahaha, definitely not.", 1, R, 0, 2
+Bella, "Wow, you remind me of my uncle!", 1, R, 0, 3
 Chris, "My name is Christian. Chris for short.", 0, L, 0, 0
 Bella, "Why are you headed to Miami?", 1, R, 0, 0
 Chris, "I'm coming back to visit my family.", 0, L, 0, 0
