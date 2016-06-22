@@ -201,7 +201,7 @@ public class DialogueBox : MonoBehaviour {
     {
         if(position == "L")
         {
-            spriteObj.transform.position = new Vector3(-3, 2, 0);
+            spriteObj.transform.position = new Vector3(-4, 2, 0);
         }
         else if(position == "R")
         {

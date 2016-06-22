@@ -173,6 +173,8 @@ public class DialogueParser : MonoBehaviour {
     {
         // currently only loads the sprites that will be used in that script
         // other option is load all sprites.. then hardcore each into the dialogue
+
+        /*
         for(int i = 0; i < lines.Count; i++)
         {
             string imageName = lines[i].name;
@@ -191,6 +193,25 @@ public class DialogueParser : MonoBehaviour {
                 }
             }
         }
+        */
+
+        // hardcode for now
+        // chris
+        Sprite chris_basic = (Sprite)Resources.Load("Sprites/Characters/chris/chris_basic", typeof(Sprite));
+        Sprite chris_angry = (Sprite)Resources.Load("Sprites/Characters/chris/chris_angry", typeof(Sprite));
+
+        images.Add(chris_basic); // 0
+        images.Add(chris_angry); // 1
+
+        //bella
+        Sprite bella_basic = (Sprite)Resources.Load("Sprites/Characters/bella/bella_basic", typeof(Sprite));
+        Sprite bella_laugh = (Sprite)Resources.Load("Sprites/Characters/bella/bella_laugh", typeof(Sprite));
+        Sprite bella_pleased = (Sprite)Resources.Load("Sprites/Characters/bella/bella_pleased", typeof(Sprite));
+
+        images.Add(bella_basic); // 2
+        images.Add(bella_laugh); // 3
+        images.Add(bella_pleased); //4
+
     }
 
 }
