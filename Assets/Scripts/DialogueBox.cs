@@ -50,6 +50,8 @@ public class DialogueBox : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        setBackground();
        
         if(Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
         {
@@ -74,8 +76,22 @@ public class DialogueBox : MonoBehaviour {
                 plainDisplay();
             }
         }
-	
+	    
 	}
+
+    void setBackground()
+    {
+        GameObject background = GameObject.Find("background");
+
+        SpriteRenderer sr = background.GetComponent<SpriteRenderer>();
+
+        float worldScreenHeight = Camera.main.orthographicSize * 2;
+        float worldScreenWidth = worldScreenHeight / Screen.height * Screen.width;
+
+        background.transform.localScale = new Vector3(
+            worldScreenWidth / sr.sprite.bounds.size.x * 1.75f,
+            worldScreenHeight / sr.sprite.bounds.size.y * 1.75f, 0);
+    }
 
     void plainDisplay()
     {
@@ -119,11 +135,16 @@ public class DialogueBox : MonoBehaviour {
 
     void OnGUI()
     {
+        customStyle.fontSize = (Screen.width + Screen.height) / 35;
+        customStyleName.fontSize = (Screen.width + Screen.height) / 40;
+        questionStyle.fontSize = (Screen.width + Screen.height) / 35;
+        answerStyle.fontSize = (Screen.width + Screen.height) / 40;
+
         if (clickedDialogue)
         {
             GUI.FocusControl(null);
-            dialogue = GUI.TextField(new Rect(100, 400, 600, 200), currText, customStyle);
-            name = GUI.TextField(new Rect(0, 350, 200, 50), name, customStyleName);
+            dialogue = GUI.TextField(new Rect(Screen.width * (.1f), Screen.height * (.7f), Screen.width * (.8f), Screen.height * (.3f)), currText, customStyle);
+            name = GUI.TextField(new Rect(Screen.width * (0), Screen.height * (.6f), Screen.width * (.2f), Screen.height * (.1f)), name, customStyleName);
         }
         
         if(clickedQuestion)
@@ -134,9 +155,9 @@ public class DialogueBox : MonoBehaviour {
             lineJump = parser.GetLineJump(lineNum);
             questionOption = parser.GetContent(lineNum - 1);
 
-            questionOption = GUI.TextField(new Rect(50, 0, 550, 150), questionOption, questionStyle);
+            questionOption = GUI.TextField(new Rect(Screen.width * (.1f), Screen.height * (0), Screen.width * (.8f), Screen.height * (.3f)), questionOption, questionStyle);
 
-            if (GUI.Button(new Rect(200, 230, 400, 100), optionZero, answerStyle))
+            if (GUI.Button(new Rect(Screen.width * (.2f), Screen.height * (.32f), Screen.width * (.6f), Screen.height * (.2f)), optionZero, answerStyle))
             {
                 // option 0
                 lineNum = lineNum + 1;
@@ -145,7 +166,7 @@ public class DialogueBox : MonoBehaviour {
                 plainDisplay();
             }
 
-            if (GUI.Button(new Rect(200, 340, 400, 100), optionOne, answerStyle))
+            if (GUI.Button(new Rect(Screen.width * (.2f), Screen.height * (.53f), Screen.width * (.6f), Screen.height * (.2f)), optionOne, answerStyle))
             {
                 // option 1
                 lineNum = lineNum + 2;
@@ -154,7 +175,7 @@ public class DialogueBox : MonoBehaviour {
                 plainDisplay();
             }
 
-            if (GUI.Button(new Rect(200, 450, 400, 100), optionTwo, answerStyle))
+            if (GUI.Button(new Rect(Screen.width * (.2f), Screen.height * (.74f), Screen.width * (.6f), Screen.height * (.2f)), optionTwo, answerStyle))
             {
                 // option 2
                 lineNum = lineNum + 3;

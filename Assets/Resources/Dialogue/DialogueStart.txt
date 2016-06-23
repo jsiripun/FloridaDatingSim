@@ -12,3 +12,9 @@ Chris, "I'm coming back to visit my family.", 0, L, 0, 0
 Chris, "What about you?", 0, L, 0, 0
 Bella, "Oh! Me too! I'm coming to visit my Uncle Ricardo.", 2, R, 0, 1
 Bella, "He actually just got out of jail recently.", 2, R, 0, 0
+Chris, "Sorry to hear, what was he in for?", 0, L, 0, 0
+Bella, "He got caught having sex with an alligator", 2, R, 0, 0
+"Oh...", "He sounds kind of crazy", "I'd probably do the same depending on the gator.", Q, 0, 0
+Bella, "Yeah..", 4, R, 2, 1
+Bella, "I take offense to that", 3, R, 0, -2
+Bella, "Oh I know, right? I love their eyes", 4, R, 0, 3
