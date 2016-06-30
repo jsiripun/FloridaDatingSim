@@ -1,0 +1,100 @@
+layout of dialogue text:
+CharacterName, "What they say", Sprite to show/position in sprite array, Left or Right on the screen, line jump number, relationship points to add or subtract
+
+game setup:
+first part - meet everyone, very straight forward and not much choice on where to go or who to meet
+second part - choose who you want to get to know
+third part - based on how many love points you have with each person is who you end up with
+
+---------------------------------------------------------------------------------------------------------------------
+
+Characters:
+Christian Armando Tramar Perez Dillard (Chris) - Heading down to Miami, 27 y.o., Aspiring musician, rap/hiphop
+	grew up in Miami with a single mom, mom was a crazy fan of Pitbull and Flo Rida (named her kid after them)
+	was raised by grandparents after mom left to go follow a Pitbull tour
+	father was arrested for ripping off his clothes in a mall and peeing on a Nike store because they told him to "Just Do It"
+	graduated high school, tried to go to school at new york college, dropped out to pursue music
+	makes terrible music
+
+Abuela - Grandma of Chris, 74 y.o., spry as a young spring chicken, always trying to do something productive around the house
+	typical grandma, gives place to stay to Chris, tries to feed him a lot, gives sassy opinions about his life
+	will provide the backstory of Chris to players - initiating conversation about Chris's history
+
+---------------------------------------------------------------------------------------------------------
+
+Characters (Love Interests):
+Isabella Gomez (Bella) - Meets Chris on train, 24 y.o., Cuban, visiting crazy uncle who just got out of jail
+	uncle went to jail because had sex with an alligator
+	hobbies - shopping, also secretly enjoys alligator sex
+	grew up in miami with uncle, moved away for college and is now back because uncle got out of jail
+	went to college at University of North Florida (UNF)
+	quit school and moved back down for uncle
+	used to watch uncle & gator having sex - accidentally walked in on them when 12 y.o.
+
+Natalie LASTNAME - 25 y.o. white woman from Midwest (Illinois), school at University Technical Institute (UTI)
+	In relationship with Michael, met him at UTI -> Wants to have a threesome with Chris and her boyfriend
+	Says "Moved to Florida after visiting once to follow BF Mike" -> Actually needed a fresh start to get away from a previous crime
+	Previous crime in the Midwest = robbed a taco food truck and tried to drive away with the owner knocked out in the back. Had sex in food truck then forgot about the owner until they called 911 on the couple
+	Chris will later get a call from them, they're in jail and want him to bail them out
+
+Michael LASTNAME - 25 y.o. white guy from Tampa, moved to Illinois to go to school at UTI.
+	Met Natalie there their sophomore year and fell in love. Tried to be normal and good for her despite his intense desire to have sex and perform crimes with Mexican food
+	8 months into their relationship, he got caught with his dick in a soft tortilla shell masturbating, which oddly turned her on
+	They progressed to have Mexican food sex together which slowly lead to a life of Mexican food related crime.
+	After being caught with the food truck due to the owner being in the back, they served only 6 months of jail time
+	Decided to move to Miami for a fresh start - Says "Moved to Florida to be back near family"
+	Chris will question why if he's from Tampa he moved to Miami - slowly unravels the truth of their taco loving days
+	Chris meets Michael when Michael asks for change for a 100 dollar bill to buy a burrito
+
+Randy Peterson - 44 y.o. balding white guy, meets Chris by complimenting his hair - "Yoohoo" SFX
+	pulls out his hair and tries to build himself a tail implant
+	is an avid brony - my little pony enthusiast, wants to become a my little pony
+	has a family, was married too young and had 3 kids - Randy is now divorced from his ex-wife Sandy
+	He's exploring his sexuality and originally only wants a casual hookup with Chris
+	If Chris pursues him, he will fall in love extremely quickly (like on the 2nd date saying I love you quick)
+	War Veteran?? Maybe??
+
+Karen Gonzalez - 21 y.o. Mexican girl, clerk at the Kim Kardashian store (Dash)
+	Moved to Miami from LA, wants constant attention, threatens suicide over ridiculous notions like someone not holding the door for her
+	Her family is very strict and conservative, she is very much a soul mate fanatic. Believes everyone is her soulmate the moment they are nice to her
+	will end up burning down the Kim K store because her manager told her no smoothies in the store
+	after he manager tells her that, she tries to seduce the manager to allow her to bring smoothies in
+	once he says no again, she is clearly angry but attempts to hide it
+	Chris is in the store when this happens. She goes to Chris and hits on him. Very neurotic one moment and very sexual the next.
+	Once she burns the store, Karen will run away to join a circus. If Chris is close enough to her, he is invited
+	One okay-ish date leads to her being obsessed with Chris
+
+Joseph Grant - 27 y.o. black surfer dude, very nice but a terribly unlucky guy. Has a shy demeanor
+	Meets Chris at the beach, Joseph is waxing his board. Trips and sprains his ankle. Chris goes to help him out.
+	Everytime you see Joseph, something new of his is broken.
+	struck by lightning, bitten by a shark, stung by stingray, biten by snake, mistaken to be a robber and tased without question
+	born and raised in Miami. Parents are alive and luckily rich to pay off all his injuries
+	will die from an accident if you end up choosing him
+
+Carlisle - alligator, meet in Everglades
+	all it will say is *Roars*, *Growls*, and *Grunts*
+
+James Wayne Gary - 38 y.o. secret serial killer. grew up in panhandle of florida, Tallahassee - has a southern accent
+	is a cosmetic doctor serial killer. kills people who get consults with him but don't get the surgery.
+	takes the bodies and puts them in the basement of his house and lets crickets eat them
+	Chris finds out he's a serial killer, and he finds out you know. If you sweet talk your way out of it, you choose him
+	if not, you die a terrible cosmetic surgeon death
+	neighbor of Chris's grandmother, is a friendly and good neighbor
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+Places:
+Train - Meet Bella
+Beach - Meet Joseph
+Grandma's Home (Living Room) - Get Chris's backstory and talk to Abuela
+Neighborhood - Meets James
+Kim K Store - Meets Karen
+Downtown South Beach - Outside on a main street - Meets Michael and Natalie, Meets Randy
+Everglades - Meets Carlisle the alligator
+Coffee Shop - Take dates to
+Club - Take dates to
+Mall - Take dates to
+Restaurant - Take dates to
+
+Options to take dates to:
+Coffee Shop, Club, Mall, Restaurant, Beach, Downtown South Beach
