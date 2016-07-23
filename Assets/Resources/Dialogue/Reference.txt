@@ -1,6 +1,22 @@
 layout of dialogue text:
 CharacterName, "What they say", Sprite to show/position in sprite array, Left or Right on the screen, line jump number, relationship points to add or subtract
 
+sprite emotions:
+basic 0
+laugh 1
+pleased 2
+angry 3
+sad 4 
+confused 5
+
+
+Question layout:
+"Question 1?", "Question 2?", "Question 3?", Q, 0, 0
+
+Scene layout:
+"Scene Name", "", "", S, 0, 0
+
+
 game setup:
 first part - meet everyone, very straight forward and not much choice on where to go or who to meet
 second part - choose who you want to get to know

@@ -1,27 +1,31 @@
 Chris, "*sigh*", 0, L, 0, 0
-Chris, "Another long train ride.", 1, L, 0, 0
-???, "Pardon me.", 2, R, 0, 0
-???, "Do you mind if I sit here?", 2, R, 0, 0
+Chris, "Another long train ride.", 3, L, 0, 0
+???, "Pardon me.", 0, R, 0, 0
+???, "Do you mind if I sit here?", 0, R, 0, 0
 "Not at all, go ahead.", "Only if you mind I sit here.", "I do. Go away.", Q, 0, 0
-Bella, "Thanks! My name is Isabella. Bella for short.", 4, R, 3, 1
-Bella, "Hahaha, definitely not.", 3, R, 1, 2
-Bella, "Wow, you remind me of my uncle!", 4, R, 2, 3
-Bella, "My name is Isabella. Bella for short.", 4, R, 0, 1
-Chris, "My name is Christian. Chris for short.", 0, L, 3, 0
-Chris, "Why do I remind you of your uncle?", 0, L, 0, 0
-Bella, "Oh, he was a little rough around the edges too.", 4, R, 0, 0
-Bella, "But I loved that about him.", 3, R, 0, 0
-Bella, "Why are you headed to Miami?", 2, R, 0, 0
+Bella, "Thanks! My name is Isabella. Bella for short.", 2, R, 3, 1
+Bella, "Hahaha, definitely not.", 1, R, 1, 2
+Bella, "Wow, you remind me of my uncle!", 2, R, 2, 3
+Bella, "My name is Isabella. Bella for short.", 2, R, 0, 1
+Chris, "My name is Christian. Chris for short.", 2, L, 3, 0
+Chris, "Why do I remind you of your uncle?", 5, L, 0, 0
+Bella, "Oh, he was a little rough around the edges too.", 2, R, 0, 0
+Bella, "But I loved that about him.", 1, R, 0, 0
+Bella, "Why are you headed to Miami?", 0, R, 0, 0
 Chris, "I'm coming back to visit my family.", 0, L, 0, 0
 Chris, "What about you?", 0, L, 0, 0
 Bella, "Oh! Me too! I'm coming to visit my Uncle Ricardo.", 2, R, 0, 1
-Bella, "He actually just got out of jail recently.", 2, R, 0, 0
-Chris, "Sorry to hear, what was he in for?", 0, L, 0, 0
-Bella, "He got caught having sex with an alligator", 2, R, 0, 0
+Bella, "He actually just got out of jail recently.", 0, R, 0, 0
+Chris, "Sorry to hear, what was he in for?", 4, L, 0, 0
+Bella, "He got caught having sex with an alligator", 0, R, 0, 0
 "Oh...", "He sounds kind of crazy", "I'd probably do the same depending on the gator.", Q, 0, 0
-Bella, "Yeah..", 4, R, 2, 1
+Bella, "Yeah..", 0, R, 2, 1
 Bella, "I take offense to that", 3, R, 0, -2
-Bella, "Oh I know, right? I love their eyes", 4, R, 0, 3
-Chris, "I'm not sure what to think of that.", 0, L, 0, 0
-Chris, "Yeah but what weirdo has sex with an alligator?", 1, L, 0, 0
-Chris, "Most definitely. The way they look at you, it's mesmerizing", 0, L, 0, 0
+Bella, "Oh I know, right? I love their eyes", 2, R, 0, 3
+Chris, "I'm not sure what to think of that.", 5, L, 2, 0
+Chris, "Yeah but what weirdo has sex with an alligator?", 5, L, 0, 0
+Chris, "Most definitely. The way they look at you, it's mesmerizing", 2, L, 0, 0
+Bella, "It's okay. It's a big surprise to most people.", 0, R, 0, 0
+Chris, "I really don't know what to say to that.", 0, L, 0, 0
+Bella, "Yeah.. anyways..", 0, L, 0, 0
+MainMenu, "", "", S, 0, 0

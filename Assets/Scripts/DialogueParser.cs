@@ -12,7 +12,9 @@ public class DialogueParser : MonoBehaviour {
     public string fileName;
 
     List<DialogueLine> lines;
-    List<Sprite> images;
+    List<Sprite> chris;
+    List<Sprite> bella;
+    Sprite mystery;
 
     struct DialogueLine
     {
@@ -37,7 +39,11 @@ public class DialogueParser : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         lines = new List<DialogueLine>();
-        images = new List<Sprite>();
+        chris = new List<Sprite>();
+        bella = new List<Sprite>();
+
+        mystery = (Sprite)Resources.Load("Sprites/Characters/mystery", typeof(Sprite));
+
 
         LoadDialogue(fileName);
         LoadImages();
@@ -71,8 +77,20 @@ public class DialogueParser : MonoBehaviour {
 
     public Sprite GetPose(int lineNumber)
     {
+        /*
         if (lineNumber < lines.Count)
             return images[int.Parse(lines[lineNumber].pose)];
+
+        return null;
+        */
+        string temp = GetName(lineNumber);
+        if (lineNumber < lines.Count)
+            if (temp.Equals("Chris"))
+                return chris[int.Parse(lines[lineNumber].pose)];
+            else if (temp.Equals("Bella"))
+                return bella[int.Parse(lines[lineNumber].pose)];
+            else if (temp.Equals("???"))
+                return mystery;
 
         return null;
     }
@@ -198,19 +216,33 @@ public class DialogueParser : MonoBehaviour {
         // hardcode for now
         // chris
         Sprite chris_basic = (Sprite)Resources.Load("Sprites/Characters/chris/chris_basic", typeof(Sprite));
+        Sprite chris_laugh = (Sprite)Resources.Load("Sprites/Characters/chris/chris_laugh", typeof(Sprite));
+        Sprite chris_pleased = (Sprite)Resources.Load("Sprites/Characters/chris/chris_pleased", typeof(Sprite));
         Sprite chris_angry = (Sprite)Resources.Load("Sprites/Characters/chris/chris_angry", typeof(Sprite));
+        Sprite chris_sad = (Sprite)Resources.Load("Sprites/Characters/chris/chris_sad", typeof(Sprite));
+        Sprite chris_confused = (Sprite)Resources.Load("Sprites/Characters/chris/chris_confused", typeof(Sprite));
 
-        images.Add(chris_basic); // 0
-        images.Add(chris_angry); // 1
+        chris.Add(chris_basic); // 0
+        chris.Add(chris_laugh); // 1
+        chris.Add(chris_pleased); // 2
+        chris.Add(chris_angry); // 3
+        chris.Add(chris_sad); // 4
+        chris.Add(chris_confused); // 5
 
         //bella
         Sprite bella_basic = (Sprite)Resources.Load("Sprites/Characters/bella/bella_basic", typeof(Sprite));
         Sprite bella_laugh = (Sprite)Resources.Load("Sprites/Characters/bella/bella_laugh", typeof(Sprite));
         Sprite bella_pleased = (Sprite)Resources.Load("Sprites/Characters/bella/bella_pleased", typeof(Sprite));
+        Sprite bella_angry = (Sprite)Resources.Load("Sprites/Characters/bella/bella_angry", typeof(Sprite));
+        Sprite bella_sad = (Sprite)Resources.Load("Sprites/Characters/bella/bella_sad", typeof(Sprite));
+        Sprite bella_confused = (Sprite)Resources.Load("Sprites/Characters/bella/bella_confused", typeof(Sprite));
 
-        images.Add(bella_basic); // 2
-        images.Add(bella_laugh); // 3
-        images.Add(bella_pleased); //4
+        bella.Add(bella_basic); // 6
+        bella.Add(bella_laugh); // 7
+        bella.Add(bella_pleased); // 8
+        bella.Add(bella_angry); // 9
+        bella.Add(bella_sad); // 10
+        bella.Add(bella_confused); // 11
 
     }
 

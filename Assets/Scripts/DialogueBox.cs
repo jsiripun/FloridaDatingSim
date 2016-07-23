@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class DialogueBox : MonoBehaviour {
 
@@ -60,8 +61,15 @@ public class DialogueBox : MonoBehaviour {
 
             if (position == "Q")
             {
+                // question
                 clickedDialogue = false;
                 clickedQuestion = true;
+            }
+            else if (position == "S")
+            {
+                // load next scene
+                name = parser.GetName(lineNum);
+                LoadNextScene(name);
             }
             else if (stillRunning)
             {
@@ -228,5 +236,10 @@ public class DialogueBox : MonoBehaviour {
         {
             spriteObj.transform.position = new Vector3(3, 2, 0);
         }
+    }
+
+    void LoadNextScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 }
