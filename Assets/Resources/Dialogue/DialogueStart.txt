@@ -28,4 +28,7 @@ Chris, "Most definitely. The way they look at you, it's mesmerizing", 2, L, 0, 0
 Bella, "It's okay. It's a big surprise to most people.", 0, R, 0, 0
 Chris, "I really don't know what to say to that.", 0, L, 0, 0
 Bella, "Yeah.. anyways..", 0, L, 0, 0
+Bella, "I hear the weather is going to be gorgeous this week", 2, L, 0, 0
+Chris, "Oh yeah, most definitely.", 2, R, 0, 0
+Chris, "Sunny skies, clear blue waters", 2, R, 0, 0
 MainMenu, "", "", S, 0, 0

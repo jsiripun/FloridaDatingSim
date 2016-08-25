@@ -145,8 +145,10 @@ public class DialogueBox : MonoBehaviour {
     {
         customStyle.fontSize = (Screen.width + Screen.height) / 35;
         customStyleName.fontSize = (Screen.width + Screen.height) / 40;
-        questionStyle.fontSize = (Screen.width + Screen.height) / 35;
-        answerStyle.fontSize = (Screen.width + Screen.height) / 40;
+        questionStyle.fontSize = Mathf.RoundToInt(((Screen.width * .2f) + (Screen.height * .32f)) / 10f);
+        answerStyle.fontSize = Mathf.RoundToInt(((Screen.width * .2f) + (Screen.height * .32f)) / 15f);
+        questionStyle.wordWrap = true;
+        answerStyle.wordWrap = true;
 
         if (clickedDialogue)
         {
