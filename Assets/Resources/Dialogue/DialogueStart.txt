@@ -36,7 +36,7 @@ Bella, "What would you know if you haven't even tried?", 0, R, 0, 0
 "It's just gross", "I guess that's true..", "Have you?", Q, 0, 0
 Chris, "It's an abomination to humankind.", 3, L, 2, 0
 Chris, "I haven't tried it so what would I know..", 0, L, 3, 0
-Bella, "… I might have..", 0, R, 12, 0
+Bella, "I might have..", 0, R, 12, 0
 Bella, "I've had enough of your ignorance.", 3, R, 0, -5
 Bella, "*gets up and walks away*", 3, R, 30, -5
 Bella, "You really shouldn't knock on things before you even try them.", 0, R, 0, 1
