@@ -13,22 +13,22 @@ Bella, "Oh, he was a little rough around the edges too.", 2, R, 0, 0
 Bella, "But I loved that about him.", 1, R, 0, 0
 Bella, "Why are you headed to Miami?", 0, R, 0, 0
 Chris, "I'm coming back to visit my family.", 0, L, 0, 0
-Chris, "What about you?", 0, L, 0, 0
+Chris, "What about you?", 5, L, 0, 0
 Bella, "Oh! Me too! I'm coming to visit my Uncle Ricardo.", 2, R, 0, 1
 Bella, "He actually just got out of jail recently.", 0, R, 0, 0
 Chris, "Sorry to hear, what was he in for?", 4, L, 0, 0
-Bella, "He got caught having sex with an alligator", 0, R, 0, 0
+Bella, "Uh.. well.. He got caught having sex with an alligator", 0, R, 0, 0
 "Oh...", "He sounds kind of crazy", "I'd probably do the same depending on the gator.", Q, 0, 0
 Bella, "Yeah..", 0, R, 2, 1
-Bella, "I take offense to that", 3, R, 0, -2
-Bella, "Oh I know, right? I love their eyes", 2, R, 0, 3
-Chris, "I'm not sure what to think of that.", 5, L, 2, 0
-Chris, "Yeah but what weirdo has sex with an alligator?", 5, L, 0, 0
-Chris, "Most definitely. The way they look at you, it's mesmerizing", 2, L, 0, 0
+Bella, "I take offense to that", 3, R, 9, -2
+Bella, "Oh I know, right? I love their eyes", 2, R, 36, 3
+Chris, "I'm not sure what to think of that.", 5, L, 0, 0
 Bella, "It's okay. It's a big surprise to most people.", 0, R, 0, 0
 Chris, "I really don't know what to say to that.", 0, L, 0, 0
 Bella, "Yeah.. anyways..", 0, L, 0, 0
 Bella, "I hear the weather is going to be gorgeous this week", 2, L, 0, 0
 Chris, "Oh yeah, most definitely.", 2, R, 0, 0
 Chris, "Sunny skies, clear blue waters", 2, R, 0, 0
+Chris, "Yeah but what weirdo has sex with an alligator?", 5, L, 0, 0
+Chris, "Most definitely. The way they look at you, it's mesmerizing", 2, L, 0, 0
 MainMenu, "", "", S, 0, 0
