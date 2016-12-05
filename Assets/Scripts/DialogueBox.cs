@@ -26,7 +26,7 @@ public class DialogueBox : MonoBehaviour {
     private string currText;
     private float letterPause = 0.05f;
     private bool stillRunning;
-    private IEnumerator coroutine;
+    private IEnumerator textCoroutine;
 
     bool clickedDialogue;
     bool clickedQuestion;
@@ -36,18 +36,20 @@ public class DialogueBox : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        
         dialogue = "";
         parser = GameObject.Find("DialogueParserObject").GetComponent<DialogueParser>();
         playa = GameObject.Find("Player").GetComponent<Player>();
+        parser.fileName = playa.getCurrentDialogue();
+        parser.reloadDialogue();
         lineNum = 0;
         clickedDialogue = false;
         clickedQuestion = false;
         currText = "";
         stillRunning = false;
-        coroutine = TypeText();
+        textCoroutine = TypeText();
         plainDisplay();
 	}
+    
 	
 	// Update is called once per frame
 	void Update () {
@@ -69,11 +71,12 @@ public class DialogueBox : MonoBehaviour {
             {
                 // load next scene
                 name = parser.GetName(lineNum);
-                LoadNextScene(name);
+                dialogue = parser.GetContent(lineNum);
+                LoadNextScene(name, dialogue);
             }
             else if (stillRunning)
             {
-                StopCoroutine(coroutine);
+                StopCoroutine(textCoroutine);
                 currText = dialogue;
                 stillRunning = false;
 
@@ -118,8 +121,8 @@ public class DialogueBox : MonoBehaviour {
         playa.addRelationshipNum(name, relNum);  
 
         DisplayImages();
-        coroutine = TypeText();
-        StartCoroutine(coroutine);
+        textCoroutine = TypeText();
+        StartCoroutine(textCoroutine);
 
 
         if (lineNum > parser.GetLineCount())
@@ -240,8 +243,9 @@ public class DialogueBox : MonoBehaviour {
         }
     }
 
-    void LoadNextScene(string sceneName)
+    void LoadNextScene(string sceneName, string sceneDialogue)
     {
+        playa.loadNextDialogue(sceneDialogue);
         SceneManager.LoadScene(sceneName);
     }
 }

@@ -43,16 +43,18 @@ public class DialogueParser : MonoBehaviour {
         bella = new List<Sprite>();
 
         mystery = (Sprite)Resources.Load("Sprites/Characters/mystery", typeof(Sprite));
-
-
-        LoadDialogue(fileName);
-        LoadImages();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
 	}
+
+    public void reloadDialogue()
+    {
+        LoadDialogue(fileName);
+        LoadImages();
+    }
 
     public int GetLineCount()
     {
