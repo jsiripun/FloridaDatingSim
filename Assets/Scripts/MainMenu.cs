@@ -16,7 +16,7 @@ public class MainMenu : MonoBehaviour {
     
     public void LoadStartScene ()
     {
-        SceneManager.LoadScene("Start");
+        SceneManager.LoadScene("OnTrain");
     }
 
     public void LoadOptionsScene()
