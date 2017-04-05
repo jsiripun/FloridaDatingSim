@@ -24,3 +24,4 @@ Abuela, "Well if you're happy, I'm happy sweetheart", 2, R, 2, 0
 Abuela, "Don't worry darling. There are plenty of fish and gators in the water.", 4, R, 1, 0
 Abuela, "That's okay honey.", 4, R, 0, 0
 Abuela, "Let's go home. I'll fix you up something to eat.", 2, R, 0, 0
+AbuelaHome, "DialogueAbuelaHome_Start.txt", "", S, 0, 0
