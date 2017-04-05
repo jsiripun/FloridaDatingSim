@@ -223,9 +223,9 @@ public class DialogueBox : MonoBehaviour {
         if(name != "")
         {
             GameObject character = GameObject.Find(name);
-
+            print(name);
             SetSpritePositions(character);
-
+            print(pose);
             SpriteRenderer currSprite = character.GetComponent<SpriteRenderer>();
             currSprite.sprite = pose;
         }

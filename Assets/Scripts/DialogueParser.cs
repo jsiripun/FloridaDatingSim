@@ -14,6 +14,7 @@ public class DialogueParser : MonoBehaviour {
     List<DialogueLine> lines;
     List<Sprite> chris;
     List<Sprite> bella;
+    List<Sprite> abuela;
     Sprite mystery;
 
     struct DialogueLine
@@ -41,6 +42,7 @@ public class DialogueParser : MonoBehaviour {
         lines = new List<DialogueLine>();
         chris = new List<Sprite>();
         bella = new List<Sprite>();
+        abuela = new List<Sprite>();
 
         mystery = (Sprite)Resources.Load("Sprites/Characters/mystery", typeof(Sprite));
 	}
@@ -91,6 +93,8 @@ public class DialogueParser : MonoBehaviour {
                 return chris[int.Parse(lines[lineNumber].pose)];
             else if (temp.Equals("Bella"))
                 return bella[int.Parse(lines[lineNumber].pose)];
+            else if (temp.Equals("Abuela"))
+                return abuela[int.Parse(lines[lineNumber].pose)];
             else if (temp.Equals("???"))
                 return mystery;
 
@@ -239,12 +243,27 @@ public class DialogueParser : MonoBehaviour {
         Sprite bella_sad = (Sprite)Resources.Load("Sprites/Characters/bella/bella_sad", typeof(Sprite));
         Sprite bella_confused = (Sprite)Resources.Load("Sprites/Characters/bella/bella_confused", typeof(Sprite));
 
-        bella.Add(bella_basic); // 6
-        bella.Add(bella_laugh); // 7
-        bella.Add(bella_pleased); // 8
-        bella.Add(bella_angry); // 9
-        bella.Add(bella_sad); // 10
-        bella.Add(bella_confused); // 11
+        bella.Add(bella_basic); // 0
+        bella.Add(bella_laugh); // 1
+        bella.Add(bella_pleased); // 2
+        bella.Add(bella_angry); // 3
+        bella.Add(bella_sad); // 4
+        bella.Add(bella_confused); // 5
+
+        //abuela
+        Sprite abuela_basic = (Sprite)Resources.Load("Sprites/Characters/abuela/abuela_basic", typeof(Sprite));
+        Sprite abuela_laugh = (Sprite)Resources.Load("Sprites/Characters/abuela/abuela_laugh", typeof(Sprite));
+        Sprite abuela_pleased = (Sprite)Resources.Load("Sprites/Characters/abuela/abuela_pleased", typeof(Sprite));
+        Sprite abuela_angry = (Sprite)Resources.Load("Sprites/Characters/abuela/abuela_angry", typeof(Sprite));
+        Sprite abuela_sad = (Sprite)Resources.Load("Sprites/Characters/abuela/abuela_sad", typeof(Sprite));
+        Sprite abuela_confused = (Sprite)Resources.Load("Sprites/Characters/abuela/abuela_confused", typeof(Sprite));
+
+        abuela.Add(abuela_basic); // 0
+        abuela.Add(abuela_laugh); // 1
+        abuela.Add(abuela_pleased); // 2
+        abuela.Add(abuela_angry); // 3
+        abuela.Add(abuela_sad); // 4
+        abuela.Add(abuela_confused); // 5
 
     }
 

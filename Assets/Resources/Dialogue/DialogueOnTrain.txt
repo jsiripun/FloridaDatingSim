@@ -70,4 +70,4 @@ Bella, "Give me a call sometime and let's hang out.", 2, R, 0, 3
 Bella, "It was nice meeting you, Chris", 2, R, 0, 0
 Chris, "It was nice meeting you too", 2, L, 0, 0
 Chris, "*train arrives to station*", 0, L, 0, 0
-TrainStation, "", "", S, 0, 0
+TrainStation, "DialogueTrainStation.txt", "", S, 0, 0

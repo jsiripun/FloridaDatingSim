@@ -5,7 +5,8 @@ using System.Collections.Generic;
 public class Player : MonoBehaviour {
 
     public static int relationshipLvlBella = 0;
-    public static string currentDialogueLoad = "DialogueOnTrain.txt";
+    //public static string currentDialogueLoad = "DialogueOnTrain.txt";
+    public static string currentDialogueLoad = "DialogueTrainStation.txt"; //change after done testing
 
     public void addRelationshipNum(string relName, int relNum)
     {
