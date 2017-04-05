@@ -25,11 +25,11 @@ Bella, "Oh I know, right? I love their eyes", 2, R, 36, 3
 Chris, "I'm not sure what to think of that.", 5, L, 0, 0
 Bella, "It's okay. It's a big surprise to most people.", 0, R, 0, 0
 Chris, "I really don't know what to say to that.", 0, L, 0, 0
-Bella, "Yeah.. anyways..", 0, L, 0, 0
-Bella, "I hear the weather is going to be gorgeous this week", 2, L, 0, 0
-Chris, "Oh yeah, most definitely.", 2, R, 0, 0
-Chris, "Sunny skies, clear blue waters", 2, R, 0, 0
-Bella, "Yep.. should be a great time.", 0, L, 37, 0
+Bella, "Yeah.. anyways..", 0, R, 0, 0
+Bella, "I hear the weather is going to be gorgeous this week", 2, R, 0, 0
+Chris, "Oh yeah, most definitely.", 2, L, 0, 0
+Chris, "Sunny skies, clear blue waters", 2, L, 0, 0
+Bella, "Yep.. should be a great time.", 0, R, 37, 0
 Chris, "Yeah but what weirdo has sex with an alligator?", 5, L, 0, 0
 Bella, "That's so rude of you.", 3, R, 0, -2
 Bella, "What would you know if you haven't even tried?", 0, R, 0, 0

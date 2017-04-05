@@ -1,2 +1,26 @@
 Abuela, "Hola mijo!", 2, R, 0, 0
 Chris, "Hola Abuela", 2, L, 0, 0
+Abuela, "How was your train ride?", 0, R, 0, 0
+"It was boring", "I met a girl..", "There was some weird girl..", Q, 0, 0
+Abuela, "At least you got here safe.", 2, R, 2, 0
+Abuela, "Oh? Tell me all about her.", 0, R, 7, 0
+Abuela, "Oh? Weird how?", 5, R, 6, 0
+Abuela, "You know I worry about you. Especially since your moth-", 4, R, 0, 0
+Chris, "ABUELA!", 3, L, 0, 0
+Chris, "You know I don't like it when you bring her up.", 0, L, 0, 0
+Abuela, "Sorry. Have you heard from her recently though?", 4, R, 0, 0
+Chris, "No, I don't really want to talk about this anymore though.", 0, L, 0, 0
+Abuela, "Okay. I'm sorry.", 4, R, 12, 0
+Chris, "We were talking about alligator sex.", 2, L, 0, 0
+Abuela, "Well that's one way to start a conversation", 1, R, 0, 0
+Abuela, "If you get tired during sex, you should drink some GATOR-ADE", 1, R, 0, 0
+Chris, "Abuela...", 0, L, 0, 0
+Abuela, "Are you going to try to see her again?", 2, R, 0, 0
+"Yeah", "No", "Maybe", Q, 0, 0
+Chris, "I really liked her.", 2, L, 2, 0
+Chris, "No, we just don't match up well.", 4, L, 2, 0
+Chris, "I don't know yet. Let's just see how it goes", 0, L, 2, 0
+Abuela, "Well if you're happy, I'm happy sweetheart", 2, R, 2, 0
+Abuela, "Don't worry darling. There are plenty of fish and gators in the water.", 4, R, 1, 0
+Abuela, "That's okay honey.", 4, R, 0, 0
+Abuela, "Let's go home. I'll fix you up something to eat.", 2, R, 0, 0
