@@ -1,0 +1,27 @@
+Abuela, "Finally home!", 2, R, 0, 0
+Abuela, "Are you hungry?", 5, R, 0, 0
+"Yes", "No", "Kind of", Q, 0, 0
+Abuela, "I'll make you some food", 2, R, 2, 0
+Abuela, "Don't be ridiculous. I'll make you some food", 1, R, 1, 0
+Abuela, "I'll make you some food", 2, R, 0, 0
+Abuela, "Just look at you, you're basically starving.", 0, R, 0, 0
+Chris, "Abuela, I'm fine.", 0, L, 0, 0
+Chris, "I'm a grown ass man!", 3, L, 0, 0
+Abuela, "I know sweetheart. You know I just get worried about you.", 4, R, 0, 0
+Abuela, "I know you don't want to talk about it but your mother is still your mother.", 4, R, 0, 0
+Abuela, "She still loves you and just wants you to underst-", 4, R, 0, 0
+Chris, "If she really loves me then why did she leave?", 3, L, 0, 0
+Chris, "Why did she leave me to go stalk someone who will never even notice her?", 3, L, 0, 0
+Abuela, "You don't know that. Pitbull could take notice of her one day.", 0, R, 0, 0
+Abuela, "She is there every single concert, you know." 0, R, 0, 0
+Abuela, "She named you partially after him for a reason.", 0, R, 0, 0
+Chris, "And what's that reason?", 3, L, 0, 0
+Chris, "So that maybe her desparate attempt to get him to notice her would work?", 3, L, 0, 0
+Chris, "She's basically as bad as my father now.", 3, L, 0, 0
+Chris, "I'm really done talking about this Abuela.", 0, L, 0, 0
+Chris, "I'm going to go now.", 0, L, 0, 0
+Abuela, "Where are you going?", 5, R, 0, 0
+"The beach", "Downtown", "Around the neighborhood", Q, 0, 0
+Beach, "", "", S, 0, 0
+Downtown, "", "", S, 0, 0
+Neighborhood, "", "", S, 0, 0
