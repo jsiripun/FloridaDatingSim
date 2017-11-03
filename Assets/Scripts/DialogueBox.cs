@@ -7,7 +7,7 @@ public class DialogueBox : MonoBehaviour {
     DialogueParser parser;
 
     public string dialogue;
-    public string name;
+    public string charName;
     public Sprite pose;
     public string position;
     public int lineJump;
@@ -70,9 +70,12 @@ public class DialogueBox : MonoBehaviour {
             else if (position == "S")
             {
                 // load next scene
-                name = parser.GetName(lineNum);
+				clickedDialogue = false;
+				print("in 's' sequence");
+                charName = parser.GetName(lineNum);
                 dialogue = parser.GetContent(lineNum);
-                LoadNextScene(name, dialogue);
+				StartCoroutine(ChangeScene(charName, dialogue));
+				return;
             }
             else if (stillRunning)
             {
@@ -110,7 +113,7 @@ public class DialogueBox : MonoBehaviour {
         clickedDialogue = true;
         currText = "";
 
-        name = parser.GetName(lineNum);
+        charName = parser.GetName(lineNum);
         dialogue = parser.GetContent(lineNum);
         pose = parser.GetPose(lineNum);
         position = parser.GetPosition(lineNum);
@@ -118,7 +121,7 @@ public class DialogueBox : MonoBehaviour {
         relNum = parser.GetRelationshipNum(lineNum);
 
         // add relationship points
-        playa.addRelationshipNum(name, relNum);  
+        playa.addRelationshipNum(charName, relNum);  
 
         DisplayImages();
         textCoroutine = TypeText();
@@ -143,6 +146,15 @@ public class DialogueBox : MonoBehaviour {
         stillRunning = false;
     }
 
+	IEnumerator ChangeScene(string sceneName, string sceneDialogue)
+	{
+		playa.loadNextDialogue(sceneDialogue);
+		float fadeTime = GameObject.Find ("DialogueBoxObject").GetComponent<Fading>().BeginFade (1);
+		yield return new WaitForSeconds (fadeTime);
+		SceneManager.LoadScene(sceneName);
+
+	}
+
 
     void OnGUI()
     {
@@ -156,8 +168,12 @@ public class DialogueBox : MonoBehaviour {
         if (clickedDialogue)
         {
             GUI.FocusControl(null);
-            dialogue = GUI.TextField(new Rect(Screen.width * (.1f), Screen.height * (.7f), Screen.width * (.8f), Screen.height * (.3f)), currText, customStyle);
-            name = GUI.TextField(new Rect(Screen.width * (0), Screen.height * (.6f), Screen.width * (.2f), Screen.height * (.1f)), name, customStyleName);
+            GUI.TextField(new Rect(Screen.width * (.1f), Screen.height * (.7f), Screen.width * (.8f), Screen.height * (.3f)), currText, customStyle);
+			if (charName == "Mystery") {
+				GUI.TextField (new Rect (Screen.width * (0), Screen.height * (.6f), Screen.width * (.2f), Screen.height * (.1f)), "???", customStyleName);
+			} else {
+				GUI.TextField (new Rect (Screen.width * (0), Screen.height * (.6f), Screen.width * (.2f), Screen.height * (.1f)), charName, customStyleName);
+			}
         }
         
         if(clickedQuestion)
@@ -168,7 +184,7 @@ public class DialogueBox : MonoBehaviour {
             lineJump = parser.GetLineJump(lineNum);
             questionOption = parser.GetContent(lineNum - 1);
 
-            questionOption = GUI.TextField(new Rect(Screen.width * (.1f), Screen.height * (0), Screen.width * (.8f), Screen.height * (.3f)), questionOption, questionStyle);
+            GUI.Label(new Rect(Screen.width * (.1f), Screen.height * (0), Screen.width * (.8f), Screen.height * (.3f)), questionOption, questionStyle);
 
             if (GUI.Button(new Rect(Screen.width * (.2f), Screen.height * (.32f), Screen.width * (.6f), Screen.height * (.2f)), optionZero, answerStyle))
             {
@@ -201,9 +217,9 @@ public class DialogueBox : MonoBehaviour {
 
     void ResetImages()
     {
-        if(name != "")
+        if(charName != "")
         {
-            GameObject character = GameObject.Find(name);
+            GameObject character = GameObject.Find(charName);
             SpriteRenderer currSprite = character.GetComponent<SpriteRenderer>();
             currSprite.sprite = null;
         }
@@ -211,18 +227,18 @@ public class DialogueBox : MonoBehaviour {
 
     void DisplayImages()
     {
-        if(name == "???")
+        if(charName == "Mystery")
         {
-            GameObject character = GameObject.Find("???");
+            GameObject character = GameObject.Find("Mystery");
 
             SetSpritePositions(character);
 
             SpriteRenderer currSprite = character.GetComponent<SpriteRenderer>();
             currSprite.sprite = pose;
         }
-        if(name != "")
+        if(charName != "")
         {
-            GameObject character = GameObject.Find(name);
+            GameObject character = GameObject.Find(charName);
 
             SetSpritePositions(character);
 
@@ -233,19 +249,13 @@ public class DialogueBox : MonoBehaviour {
 
     void SetSpritePositions(GameObject spriteObj)
     {
-        if(position == "L")
+		if(position == "L" || charName == "Chris")
         {
             spriteObj.transform.position = new Vector3(-4, 2, 0);
         }
-        else if(position == "R")
+        else
         {
             spriteObj.transform.position = new Vector3(3, 2, 0);
         }
-    }
-
-    void LoadNextScene(string sceneName, string sceneDialogue)
-    {
-        playa.loadNextDialogue(sceneDialogue);
-        SceneManager.LoadScene(sceneName);
     }
 }

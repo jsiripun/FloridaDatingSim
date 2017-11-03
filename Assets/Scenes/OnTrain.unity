@@ -99,6 +99,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 284778177}
   - 212: {fileID: 284778176}
+  - 95: {fileID: 284778178}
   m_Layer: 0
   m_Name: background
   m_TagString: Untagged
@@ -152,6 +153,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1629175335}
   m_RootOrder: 0
+--- !u!95 &284778178
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 284778175}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 84857b53fc521ed428d5a6addb03727b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &662053316
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,6 +222,7 @@ GameObject:
   - 223: {fileID: 745545594}
   - 114: {fileID: 745545593}
   - 114: {fileID: 745545592}
+  - 95: {fileID: 745545596}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -285,6 +304,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!95 &745545596
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 745545591}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 80065c5e5f5d51347a5318a525444b21, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &850865809
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,7 +394,7 @@ GameObject:
   - 4: {fileID: 1024479191}
   - 212: {fileID: 1024479192}
   m_Layer: 0
-  m_Name: ???
+  m_Name: Mystery
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -419,6 +455,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1074539842}
   - 114: {fileID: 1074539841}
+  - 114: {fileID: 1074539843}
   m_Layer: 0
   m_Name: DialogueBoxObject
   m_TagString: Untagged
@@ -438,7 +475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: 
-  name: 
+  charName: 
   pose: {fileID: 0}
   position: 
   lineJump: 0
@@ -724,6 +761,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!114 &1074539843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1074539840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4b54707ec00fa48b349e9dacf30b77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeOutTexture: {fileID: 2800000, guid: f7fe8c54b74537a47be1dd445cbc2b0d, type: 3}
+  fadeSpeed: 0.8
 --- !u!1 &1127016788
 GameObject:
   m_ObjectHideFlags: 0

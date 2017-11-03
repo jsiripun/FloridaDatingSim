@@ -6,10 +6,13 @@ using System.IO;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
 using System.Linq;
+using System;
 
 public class DialogueParser : MonoBehaviour {
 
     public string fileName;
+	List <string> namesInDialogue;
+	Dictionary<string, List<Sprite>> spritesInDialogue;
 
     List<DialogueLine> lines;
     List<Sprite> chris;
@@ -18,7 +21,7 @@ public class DialogueParser : MonoBehaviour {
 
     struct DialogueLine
     {
-        public string name;
+        public string charName;
         public string content;
         public string pose;
         public string position;
@@ -27,7 +30,7 @@ public class DialogueParser : MonoBehaviour {
 
         public DialogueLine(string n, string c, string p, string pos, int lj, int relnum)
         {
-            name = n;
+            charName = n;
             content = c;
             pose = p;
             position = pos;
@@ -39,6 +42,9 @@ public class DialogueParser : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         lines = new List<DialogueLine>();
+		namesInDialogue = new List<string> ();
+		spritesInDialogue = new Dictionary<string, List<Sprite>> ();
+
         chris = new List<Sprite>();
         bella = new List<Sprite>();
 
@@ -52,6 +58,12 @@ public class DialogueParser : MonoBehaviour {
 
     public void reloadDialogue()
     {
+		// clear up old dialogue
+		lines.Clear ();
+		namesInDialogue.Clear ();
+		spritesInDialogue.Clear ();
+
+		// relead everything with new
         LoadDialogue(fileName);
         LoadImages();
     }
@@ -64,7 +76,7 @@ public class DialogueParser : MonoBehaviour {
     public string GetName(int lineNumber)
     {
         if (lineNumber < lines.Count)
-            return lines[lineNumber].name;
+            return lines[lineNumber].charName;
 
         return "";
     }
@@ -79,20 +91,11 @@ public class DialogueParser : MonoBehaviour {
 
     public Sprite GetPose(int lineNumber)
     {
-        /*
-        if (lineNumber < lines.Count)
-            return images[int.Parse(lines[lineNumber].pose)];
+		string temp = GetName(lineNumber);
+		List<Sprite> tempSpriteArray = spritesInDialogue [temp];
+		if (lineNumber < lines.Count)
+			return tempSpriteArray[int.Parse(lines[lineNumber].pose)];
 
-        return null;
-        */
-        string temp = GetName(lineNumber);
-        if (lineNumber < lines.Count)
-            if (temp.Equals("Chris"))
-                return chris[int.Parse(lines[lineNumber].pose)];
-            else if (temp.Equals("Bella"))
-                return bella[int.Parse(lines[lineNumber].pose)];
-            else if (temp.Equals("???"))
-                return mystery;
 
         return null;
     }
@@ -116,7 +119,7 @@ public class DialogueParser : MonoBehaviour {
     public string GetOptionZero(int lineNumber)
     {
         if (lineNumber < lines.Count)
-            return lines[lineNumber].name;
+            return lines[lineNumber].charName;
 
         return "";
     }
@@ -160,6 +163,15 @@ public class DialogueParser : MonoBehaviour {
                 {
                     string[] line_values = SplitCsvLine(line);
                     DialogueLine line_entry = new DialogueLine(line_values[0], line_values[1], line_values[2], line_values[3], int.Parse(line_values[4]), int.Parse(line_values[5]));
+
+					// add to names in dialogue for loading sprite purpose
+					if(!namesInDialogue.Contains(line_values[0]) && line_values[3]!="S" && line_values[3]!="Q") {
+						string tempName = line_values[0];
+						namesInDialogue.Add(tempName); 
+						List<Sprite> tempSpriteList = new List<Sprite>();
+						spritesInDialogue.Add(tempName, tempSpriteList);
+					}
+
                     lines.Add(line_entry);
                 }
             } while (line != null);
@@ -191,61 +203,20 @@ public class DialogueParser : MonoBehaviour {
 
     void LoadImages()
     {
-        // currently only loads the sprites that will be used in that script
-        // other option is load all sprites.. then hardcore each into the dialogue
+		foreach (var x in namesInDialogue) {
+			try {
+				
+				var sprites = Resources.LoadAll("Sprites/Characters/" + x + "/", typeof(Sprite)).Cast<Sprite>();
+				List<Sprite> temp = spritesInDialogue[x];
+				foreach (var s in sprites)
+				{
+					temp.Add(s);
+				}
 
-        /*
-        for(int i = 0; i < lines.Count; i++)
-        {
-            string imageName = lines[i].name;
-            if(imageName == "???")
-            {
-                Sprite unknown = (Sprite)Resources.Load("Sprites/Characters/Chris1", typeof(Sprite));
-                if (!images.Contains(unknown))
-                    images.Add(unknown);
-            }
-            else
-            {
-                Sprite image = (Sprite)Resources.Load("Sprites/Characters/" + imageName, typeof(Sprite));
-                if (!images.Contains(image))
-                {
-                    images.Add(image);
-                }
-            }
-        }
-        */
-
-        // hardcode for now
-        // chris
-        Sprite chris_basic = (Sprite)Resources.Load("Sprites/Characters/chris/chris_basic", typeof(Sprite));
-        Sprite chris_laugh = (Sprite)Resources.Load("Sprites/Characters/chris/chris_laugh", typeof(Sprite));
-        Sprite chris_pleased = (Sprite)Resources.Load("Sprites/Characters/chris/chris_pleased", typeof(Sprite));
-        Sprite chris_angry = (Sprite)Resources.Load("Sprites/Characters/chris/chris_angry", typeof(Sprite));
-        Sprite chris_sad = (Sprite)Resources.Load("Sprites/Characters/chris/chris_sad", typeof(Sprite));
-        Sprite chris_confused = (Sprite)Resources.Load("Sprites/Characters/chris/chris_confused", typeof(Sprite));
-
-        chris.Add(chris_basic); // 0
-        chris.Add(chris_laugh); // 1
-        chris.Add(chris_pleased); // 2
-        chris.Add(chris_angry); // 3
-        chris.Add(chris_sad); // 4
-        chris.Add(chris_confused); // 5
-
-        //bella
-        Sprite bella_basic = (Sprite)Resources.Load("Sprites/Characters/bella/bella_basic", typeof(Sprite));
-        Sprite bella_laugh = (Sprite)Resources.Load("Sprites/Characters/bella/bella_laugh", typeof(Sprite));
-        Sprite bella_pleased = (Sprite)Resources.Load("Sprites/Characters/bella/bella_pleased", typeof(Sprite));
-        Sprite bella_angry = (Sprite)Resources.Load("Sprites/Characters/bella/bella_angry", typeof(Sprite));
-        Sprite bella_sad = (Sprite)Resources.Load("Sprites/Characters/bella/bella_sad", typeof(Sprite));
-        Sprite bella_confused = (Sprite)Resources.Load("Sprites/Characters/bella/bella_confused", typeof(Sprite));
-
-        bella.Add(bella_basic); // 6
-        bella.Add(bella_laugh); // 7
-        bella.Add(bella_pleased); // 8
-        bella.Add(bella_angry); // 9
-        bella.Add(bella_sad); // 10
-        bella.Add(bella_confused); // 11
-
+			} catch (Exception e) {
+				Debug.Log ("Failed to load sprites: " + x);
+			}
+		}
     }
 
 }

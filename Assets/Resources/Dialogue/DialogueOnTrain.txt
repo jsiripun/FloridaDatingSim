@@ -1,73 +1,73 @@
-Chris, "*sigh*", 0, L, 0, 0
-Chris, "Another long train ride.", 3, L, 0, 0
-???, "Pardon me.", 0, R, 0, 0
-???, "Do you mind if I sit here?", 0, R, 0, 0
+Chris, "*sigh*", 0, , 0, 0
+Chris, "Another long train ride.", 3, , 0, 0
+Mystery, "Pardon me.", 0, R, 0, 0
+Mystery, "Do you mind if I sit here?", 0, R, 0, 0
 "Not at all, go ahead.", "Only if you mind I sit here.", "I do. Go away.", Q, 0, 0
 Bella, "Thanks! My name is Isabella. Bella for short.", 2, R, 3, 1
 Bella, "Hahaha, definitely not.", 1, R, 1, 2
 Bella, "Wow, you remind me of my uncle!", 2, R, 2, 3
 Bella, "My name is Isabella. Bella for short.", 2, R, 0, 1
-Chris, "My name is Christian. Chris for short.", 2, L, 3, 0
-Chris, "Why do I remind you of your uncle?", 5, L, 0, 0
+Chris, "My name is Christian. Chris for short.", 2, , 3, 0
+Chris, "Why do I remind you of your uncle?", 5, , 0, 0
 Bella, "Oh, he was a little rough around the edges too.", 2, R, 0, 0
 Bella, "But I loved that about him.", 1, R, 0, 0
 Bella, "Why are you headed to Miami?", 0, R, 0, 0
-Chris, "I'm coming back to visit my family.", 0, L, 0, 0
-Chris, "What about you?", 5, L, 0, 0
+Chris, "I'm coming back to visit my family.", 0, , 0, 0
+Chris, "What about you?", 5, , 0, 0
 Bella, "Oh! Me too! I'm coming to visit my Uncle Ricardo.", 2, R, 0, 1
 Bella, "He actually just got out of jail recently.", 0, R, 0, 0
-Chris, "Sorry to hear, what was he in for?", 4, L, 0, 0
+Chris, "Sorry to hear, what was he in for?", 4, , 0, 0
 Bella, "Uh.. well.. He got caught having sex with an alligator", 0, R, 0, 0
 "Oh...", "He sounds kind of crazy", "I'd probably do the same depending on the gator.", Q, 0, 0
 Bella, "Yeah..", 0, R, 2, 1
 Bella, "I take offense to that", 3, R, 9, -2
 Bella, "Oh I know, right? I love their eyes", 2, R, 36, 3
-Chris, "I'm not sure what to think of that.", 5, L, 0, 0
+Chris, "I'm not sure what to think of that.", 5, , 0, 0
 Bella, "It's okay. It's a big surprise to most people.", 0, R, 0, 0
-Chris, "I really don't know what to say to that.", 0, L, 0, 0
-Bella, "Yeah.. anyways..", 0, L, 0, 0
-Bella, "I hear the weather is going to be gorgeous this week", 2, L, 0, 0
-Chris, "Oh yeah, most definitely.", 2, R, 0, 0
-Chris, "Sunny skies, clear blue waters", 2, R, 0, 0
-Bella, "Yep.. should be a great time.", 0, L, 37, 0
-Chris, "Yeah but what weirdo has sex with an alligator?", 5, L, 0, 0
+Chris, "I really don't know what to say to that.", 0, , 0, 0
+Bella, "Yeah.. anyways..", 0, R, 0, 0
+Bella, "I hear the weather is going to be gorgeous this week", 2, R, 0, 0
+Chris, "Oh yeah, most definitely.", 2, , 0, 0
+Chris, "Sunny skies, clear blue waters", 2, , 0, 0
+Bella, "Yep.. should be a great time.", 0, R, 37, 0
+Chris, "Yeah but what weirdo has sex with an alligator?", 5, , 0, 0
 Bella, "That's so rude of you.", 3, R, 0, -2
 Bella, "What would you know if you haven't even tried?", 0, R, 0, 0
 "It's just gross", "I guess that's true..", "Have you?", Q, 0, 0
-Chris, "It's an abomination to humankind.", 3, L, 2, 0
-Chris, "I haven't tried it so what would I know..", 0, L, 3, 0
+Chris, "It's an abomination to humankind.", 3, , 2, 0
+Chris, "I haven't tried it so what would I know..", 0, , 3, 0
 Bella, "I might have..", 0, R, 12, 0
 Bella, "I've had enough of your ignorance.", 3, R, 0, -5
 Bella, "*gets up and walks away*", 3, R, 30, -5
 Bella, "You really shouldn't knock on things before you even try them.", 0, R, 0, 1
-Chris, "You're right. I was definitely speaking without thinking.", 4, L, 0, 0
-Chris, "I was being judgmental without thinking about your point of view.", 4, L, 0, 0
-Chris, "I'm sorry if I offended you. I'm working on being more compassionate.", 0, L, 0, 0
+Chris, "You're right. I was definitely speaking without thinking.", 4, , 0, 0
+Chris, "I was being judgmental without thinking about your point of view.", 4, , 0, 0
+Chris, "I'm sorry if I offended you. I'm working on being more compassionate.", 0, , 0, 0
 Bella, "It's okay. I forgive you. I know it's hard to see things from someone else's point of view.", 2, R, 0, 3
-Chris, "Just because I don't personally agree with something doesn't give me the right to spew hate against it.", 0, L, 0, 0
-Chris, "I'm not sure why I felt the need be belligerent towards you and your family.", 5, L, 0, 0
-Chris, "It's probably a lot of self-internalized hatred that is being severely misdirected.", 4, L, 0, 0
+Chris, "Just because I don't personally agree with something doesn't give me the right to spew hate against it.", 0, , 0, 0
+Chris, "I'm not sure why I felt the need be belligerent towards you and your family.", 5, , 0, 0
+Chris, "It's probably a lot of self-internalized hatred that is being severely misdirected.", 4, , 0, 0
 Bella, "I'm glad you've learned something from our conversation today.", 1, R, 0, 5
 Bella, "I'd love to talk to you later and get to know you more!", 2, R, 18, 3
 Bella, "That's a bit of a personal question, don'tcha think?", 0, R, 0, 0
-Chris, "Yeah, you're right. Sorry, that was out of line.", 0, L, 0, 0
+Chris, "Yeah, you're right. Sorry, that was out of line.", 0, , 0, 0
 Chris, "I guess I'm just curious about the whole process..", 5, R, 0, 0
 Bella, "Well.. to answer your question. Yes, I have.", 2, R, 0, 1
-Chris, "Woah.. what's it like?", 0, L, 0, 0
+Chris, "Woah.. what's it like?", 0, , 0, 0
 Bella, "It's surprisingly amazing. A little rough at first but you get used to it.", 2, R, 0, 2
 Bella, "Something about their eyes just gets me..", 2, R, 0, 2
-Chris, "I'd love for you to tell me more about it sometime.", 2, L, 0, 0
+Chris, "I'd love for you to tell me more about it sometime.", 2, , 0, 0
 Bella, "I'd love to. You can call me anytime.", 1, R, 9, 1
-Chris, "Most definitely. The way they look at you, it's mesmerizing", 2, L, 0, 0
+Chris, "Most definitely. The way they look at you, it's mesmerizing", 2, , 0, 0
 Bella, "I totally agree!", 2, R, 0, 5
 Bella, "The way their eyes look at you, it's as if they're staring into your soul.", 2, R, 0, 5
 Bella, "It's almost as if their eyes are the gateway to pure happiness.", 2, R, 0, 5
-Chris, "I've never met someone who could describe exactly how I feel.", 1, L, 0, 0
-Chris, "I feel like we have a real connection here.", 2, L, 0, 0
-Chris, "Please tell me it isn't just me feeling this..", 0, L, 0, 0
+Chris, "I've never met someone who could describe exactly how I feel.", 1, , 0, 0
+Chris, "I feel like we have a real connection here.", 2, , 0, 0
+Chris, "Please tell me it isn't just me feeling this..", 0, , 0, 0
 Bella, "No, I feel it too. I really want to get to know you more." 2, R, 0, 3
 Bella, "Give me a call sometime and let's hang out.", 2, R, 0, 3
 Bella, "It was nice meeting you, Chris", 2, R, 0, 0
-Chris, "It was nice meeting you too", 2, L, 0, 0
-Chris, "*train arrives to station*", 0, L, 0, 0
-TrainStation, "", "", S, 0, 0
+Chris, "It was nice meeting you too", 2, , 0, 0
+Chris, "*train arrives to station*", 0, , 0, 0
+TrainStation, DialogueTrainStation.txt, "", S, 0, 0

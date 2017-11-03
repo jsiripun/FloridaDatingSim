@@ -649,8 +649,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3a6727b125175d4d9c4da4e6a5117eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: 
-  name: 
+  dialogue: DialogueTrainStation.txt
+  charName: 
   pose: {fileID: 0}
   position: 
   lineJump: 0
