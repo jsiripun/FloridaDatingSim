@@ -15,8 +15,6 @@ public class DialogueParser : MonoBehaviour {
 	Dictionary<string, List<Sprite>> spritesInDialogue;
 
     List<DialogueLine> lines;
-    List<Sprite> chris;
-    List<Sprite> bella;
     Sprite mystery;
 
     struct DialogueLine
@@ -45,10 +43,6 @@ public class DialogueParser : MonoBehaviour {
 		namesInDialogue = new List<string> ();
 		spritesInDialogue = new Dictionary<string, List<Sprite>> ();
 
-        chris = new List<Sprite>();
-        bella = new List<Sprite>();
-
-        mystery = (Sprite)Resources.Load("Sprites/Characters/mystery", typeof(Sprite));
 	}
 	
 	// Update is called once per frame
