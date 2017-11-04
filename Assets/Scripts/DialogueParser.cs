@@ -155,18 +155,25 @@ public class DialogueParser : MonoBehaviour {
                 line = r.ReadLine();
                 if (line != null)
                 {
-                    string[] line_values = SplitCsvLine(line);
-                    DialogueLine line_entry = new DialogueLine(line_values[0], line_values[1], line_values[2], line_values[3], int.Parse(line_values[4]), int.Parse(line_values[5]));
+					try {
+						string[] line_values = SplitCsvLine(line);
 
-					// add to names in dialogue for loading sprite purpose
-					if(!namesInDialogue.Contains(line_values[0]) && line_values[3]!="S" && line_values[3]!="Q") {
-						string tempName = line_values[0];
-						namesInDialogue.Add(tempName); 
-						List<Sprite> tempSpriteList = new List<Sprite>();
-						spritesInDialogue.Add(tempName, tempSpriteList);
+                    	DialogueLine line_entry = new DialogueLine(line_values[0], line_values[1], line_values[2], line_values[3], int.Parse(line_values[4]), int.Parse(line_values[5]));
+
+						// add to names in dialogue for loading sprite purpose
+						if(!namesInDialogue.Contains(line_values[0]) && line_values[3]!="S" && line_values[3]!="Q") {
+							string tempName = line_values[0];
+							namesInDialogue.Add(tempName); 
+							List<Sprite> tempSpriteList = new List<Sprite>();
+							spritesInDialogue.Add(tempName, tempSpriteList);
+						}
+
+						lines.Add(line_entry);
+
+					} catch (Exception e) {
+						Debug.Log("ERROR in dialogue line number " + (lines.Count));
 					}
 
-                    lines.Add(line_entry);
                 }
             } while (line != null);
 

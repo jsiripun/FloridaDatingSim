@@ -2,12 +2,13 @@ layout of dialogue text:
 CharacterName, "What they say", Sprite to show/position in sprite array, Left or Right on the screen, line jump number, relationship points to add or subtract
 
 sprite emotions:
-basic 0
-laugh 1
-pleased 2
-angry 3
-sad 4 
-confused 5
+angry 		0
+basic    	1
+confused  	2
+laugh    	3
+pleased    	4
+sad        	5
+
 
 
 Question layout:

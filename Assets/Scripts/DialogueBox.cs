@@ -71,7 +71,6 @@ public class DialogueBox : MonoBehaviour {
             {
                 // load next scene
 				clickedDialogue = false;
-				print("in 's' sequence");
                 charName = parser.GetName(lineNum);
                 dialogue = parser.GetContent(lineNum);
 				StartCoroutine(ChangeScene(charName, dialogue));

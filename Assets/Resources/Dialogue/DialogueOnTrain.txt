@@ -1,73 +1,136 @@
 Chris, "*sigh*", 0, , 0, 0
-Chris, "Another long train ride.", 3, , 0, 0
-Mystery, "Pardon me.", 0, R, 0, 0
-Mystery, "Do you mind if I sit here?", 0, R, 0, 0
+Chris, "Another long train ride.", 1, , 0, 0
+Chris, "I already want to go back home..", 1, , 0, 0
+Mystery, "Pardon me.", 0, , 0, 0
+Mystery, "Do you mind if I sit here?", 0, , 0, 0
 "Not at all, go ahead.", "Only if you mind I sit here.", "I do. Go away.", Q, 0, 0
-Bella, "Thanks! My name is Isabella. Bella for short.", 2, R, 3, 1
-Bella, "Hahaha, definitely not.", 1, R, 1, 2
-Bella, "Wow, you remind me of my uncle!", 2, R, 2, 3
-Bella, "My name is Isabella. Bella for short.", 2, R, 0, 1
-Chris, "My name is Christian. Chris for short.", 2, , 3, 0
-Chris, "Why do I remind you of your uncle?", 5, , 0, 0
-Bella, "Oh, he was a little rough around the edges too.", 2, R, 0, 0
-Bella, "But I loved that about him.", 1, R, 0, 0
-Bella, "Why are you headed to Miami?", 0, R, 0, 0
-Chris, "I'm coming back to visit my family.", 0, , 0, 0
-Chris, "What about you?", 5, , 0, 0
-Bella, "Oh! Me too! I'm coming to visit my Uncle Ricardo.", 2, R, 0, 1
-Bella, "He actually just got out of jail recently.", 0, R, 0, 0
-Chris, "Sorry to hear, what was he in for?", 4, , 0, 0
-Bella, "Uh.. well.. He got caught having sex with an alligator", 0, R, 0, 0
+Bella, "Thanks! My name is Isabella. Bella for short.", 4, , 3, 1
+Bella, "Hahaha, definitely not.", 3, , 1, 2
+Bella, "Wow, you remind me of my uncle!", 1, , 2, 3
+Bella, "My name is Isabella. Bella for short.", 4, , 0, 1
+Chris, "My name is Christian. Chris for short.", 4, , 3, 0
+Chris, "Why do I remind you of your uncle?", 2, , 0, 0
+Bella, "Oh, he was a little rough around the edges too.", 1, , 0, 0
+Bella, "But I loved that about him.", 4, , 0, 0
+Bella, "Why are you headed to Miami?", 2, , 0, 0
+Chris, "I'm coming back to visit my family.", 1, , 0, 0
+Chris, "What about you?", 2, , 0, 0
+Bella, "Oh! Me too! I'm coming to visit my Uncle Ricardo.", 4, , 0, 1
+Bella, "He actually just got out of jail recently.", 1, , 0, 0
+Chris, "Sorry to hear, what was he in for?", 5, , 0, 0
+Bella, "Uh.. well.. ", 1, , 0, 0
+Bella, "It's kind of weird.. and a bit personal", 1, , 0, 0
+Bella, "Are you sure you really want to know?", 2, , 0, 0
+"Yeah, I do.", "No, it's okay.", "Only if you feel comfortable.", Q, 0, 0
+Bella, "Well..", 1, , 3, 0
+Bella, "Let's talk about something else.", 4, , 12, 0
+Bella, "I appreciate that.", 4, , 0, 1
+Bella, "You seem like a nice guy so I'll tell you.", 1, , 0, 0
+Bella, "He had sex with an alligator..", 1, , 0, 0
 "Oh...", "He sounds kind of crazy", "I'd probably do the same depending on the gator.", Q, 0, 0
-Bella, "Yeah..", 0, R, 2, 1
-Bella, "I take offense to that", 3, R, 9, -2
-Bella, "Oh I know, right? I love their eyes", 2, R, 36, 3
-Chris, "I'm not sure what to think of that.", 5, , 0, 0
-Bella, "It's okay. It's a big surprise to most people.", 0, R, 0, 0
-Chris, "I really don't know what to say to that.", 0, , 0, 0
-Bella, "Yeah.. anyways..", 0, R, 0, 0
-Bella, "I hear the weather is going to be gorgeous this week", 2, R, 0, 0
-Chris, "Oh yeah, most definitely.", 2, , 0, 0
-Chris, "Sunny skies, clear blue waters", 2, , 0, 0
-Bella, "Yep.. should be a great time.", 0, R, 37, 0
-Chris, "Yeah but what weirdo has sex with an alligator?", 5, , 0, 0
-Bella, "That's so rude of you.", 3, R, 0, -2
-Bella, "What would you know if you haven't even tried?", 0, R, 0, 0
+Bella, "Yeah..", 1, , 2, 1
+Bella, "I take offense to that", 0, , 66, -2
+Bella, "Wait... seriously?", 2, , 39, 3
+Chris, "I'm not sure what to think of that.", 2, , 0, 0
+Bella, "It's okay. It's a big surprise to most people.", 1, , 0, 0
+Chris, "I really don't know what to say to that.", 1, , 0, 0
+Bella, "Yeah.. anyways..", 1, , 0, 0
+Bella, "Let's talk about something else.", 1, , 0, 0
+Bella, "What should we talk about?", 1, , 0, 0
+"Hobbies", "Weather", "Love life", Q, 0, 0
+Bella, "I love shopping!", 4, , 2, 1
+Bella, "I hear the weather is going to be gorgeous this week", 4, , 10, 0
+Bella, "Oh, I'm single now", 4, , 14, 2
+Bella, "The mall is my favorite hang out spot.", 4, , 0, 0
+Bella, "Something about buying things I'll never need just makes me so giddy.", 3, , 0, 0
+Bella, "I just love the concept that with enough pieces of paper, you can get anything.", 1, , 0, 0
+Bella, "Like I could get a tiny mechanical device that tells me the weather and will fit in my palm for some paper!", 4, , 0, 0
+Bella, "Or I could buy things using a piece of plastic that has a pretend monetary value on it.", 1, , 0, 0
+Bella, "It's just such a crazy concept!", 3, , 0, 0
+Chris, "Yeah. What a weird way to put it.", 3, , 0, 0
+Bella, "I'd love to talk to you more about the oddities of the common world.", 1, , 16, 0
+Chris, "Oh yeah, most definitely.", 4, , 0, 0
+Chris, "Sunny skies, clear blue waters", 4, , 0, 0
+Bella, "Yep.. should be a great time.", 4, , 0, 0
+Bella, "I'm hoping to go swimming at the beach, I've been missing the waves", 1, , 0, 0
+Chris, "I did hear there was an incoming hurricane from down south but Miami won't be in its course.", 1, , 0, 0
+Bella, "Well let's hope it stays that way.", 1, , 10, 0
+Chris, "Oh, so am I!", 4, , 0, 0
+Bella, "My last boyfriend was the president of the club I was in. It didn't end well..", 5, , 0, 0
+Bella, "We just drifted apart over time and wanted different things.", 5, , 0, 0
+Bella, "Sometimes I still miss him but I'm ready to move on with my life.", 4, , 0, 0
+"Maybe I can help with that", "You deserve to move on", "Try to work it out", Q, 0, 0
+Bella, "I'd definitely be interested, here's my number", 4, , 2, 2
+Bella, "Thanks, I appreciate your kindness", 4, , 2, 1
+Bella, "I don't know..", 1, , 4, 0
+Chris, "I'll give you a call sometime.", 4, , 64, 0
+Bella, "I'd love to have you help me move on.", 4, , 0, 0
+Bella, "Anyways.. let's talk more later.. here's my number.", 1, , 62, 0
+Bella, "It just wasn't meant to be.. you know?", 5, , 0, 0
+Bella, "Sometimes you just know when something ends and it's time to give up on it and get on with your life.", 1, , 0, 0
+Bella, "Anyways, I'd love to chat more with you later.", 1, , 0, 0
+Bella, "Here's my number, give me a call sometime.", 4, , 58, 0
+Chris, "Yeah, I'd be down for some alligator lovin'.", 4, , 0, 0
+Bella, "You're not just messing around are you?", 1, , 0, 0
+"GOTCHA!", "Kekeke","No, I'm serious", Q, 0, 0
+Chris, "No, I'm just kidding.", 3, , 21, 0
+Bella, "...", 1, , 20, 0
+Chris, "I'm actually kind of attracted to gators.", 1, , 0, 0
+Bella, "I don't believe you...", 1, , 0, 0
+Bella, "If you're actually serious.. I have to confess..", 1, , 0, 0
+Bella, "So am I! And it's such a relief to meet someone who just gets it.", 4, , 0, 5
+Bella, "My ex-boyfriend just didn't get it. I would ask him to wear an alligator costume during sex.", 1, , 0, 0
+Bella, "And he just wasn't into it. It ended up creating a huge gap in our relationship.", 4, , 0, 0
+Chris, "I'm sorry to hear about your relationship. But I totally get it.", 1, , 0, 0
+Chris, "It can be a real turn off for some people..", 1, , 0, 0
+Chris, "But we can't help what we find attractive and who we love.", 1, ,0, 0
+Bella, "I'm so relieved you think the same thing. I've never connected to someone who feels the same way.", 4, , 0, 0
+Bella, "It's so exhilirating and relieving. I can't even explain it..", 4, , 0, 0
+Bella, "What do you love about them most?", 2, , 0, 0
+"Eyes", "Scales", "Jaws", Q, 0, 0
+Chris, "Something about their beady eyes just make me shiver in anticipation.", 4, , 2, 0
+Chris, "Those scales just make me want to rub my body all over them.", 4, , 1, 0
+Chris, "Teeth like that make me want to ball up inside their mouth and never leave.", 4, , 0, 0
+Bella, "I totally agree with you. For me, I just love their claws.", 4, , 0, 0
+Bella, "I want to hold those claws until my hands go numb!", 4, , 0, 0
+Bella, "I definitely want to talk to you more about these gators.", 4, , 0, 0
+Bella, "Please take my number and give me a call.", 4, , 33, 0
+Bella, "I don't find that funny..", 0, , 0, 0
+Chris, "Yeah but what weirdo has sex with an alligator?", 0, , 0, 0
+Bella, "That's so rude of you.", 0, , 0, 0
+Bella, "Who do you think you are judging other people?", 0, , 0, 0
+Bella, "What would you know if you haven't even tried?", 0, , 0, 0
 "It's just gross", "I guess that's true..", "Have you?", Q, 0, 0
-Chris, "It's an abomination to humankind.", 3, , 2, 0
-Chris, "I haven't tried it so what would I know..", 0, , 3, 0
-Bella, "I might have..", 0, R, 12, 0
-Bella, "I've had enough of your ignorance.", 3, R, 0, -5
-Bella, "*gets up and walks away*", 3, R, 30, -5
-Bella, "You really shouldn't knock on things before you even try them.", 0, R, 0, 1
-Chris, "You're right. I was definitely speaking without thinking.", 4, , 0, 0
-Chris, "I was being judgmental without thinking about your point of view.", 4, , 0, 0
-Chris, "I'm sorry if I offended you. I'm working on being more compassionate.", 0, , 0, 0
-Bella, "It's okay. I forgive you. I know it's hard to see things from someone else's point of view.", 2, R, 0, 3
-Chris, "Just because I don't personally agree with something doesn't give me the right to spew hate against it.", 0, , 0, 0
-Chris, "I'm not sure why I felt the need be belligerent towards you and your family.", 5, , 0, 0
-Chris, "It's probably a lot of self-internalized hatred that is being severely misdirected.", 4, , 0, 0
-Bella, "I'm glad you've learned something from our conversation today.", 1, R, 0, 5
-Bella, "I'd love to talk to you later and get to know you more!", 2, R, 18, 3
-Bella, "That's a bit of a personal question, don'tcha think?", 0, R, 0, 0
+Chris, "It's an abomination to humankind.", 0, , 2, 0
+Chris, "I haven't tried it so what would I know..", 1, , 4, 0
+Bella, "...", 0, , 16, 0
+Chris, "What sane person in their right mind would have sex with a reptile?", 0, , 0, 0
+Bella, "I've had enough of your ignorance.", 0, , 0, -5
+Bella, "*gets up and walks away*", 0, , 25, -5
+Bella, "You really shouldn't knock on things before you even try them.", 1, , 0, 1
+Chris, "You're right. I was definitely speaking without thinking.", 5, , 0, 0
+Chris, "I didn't mean to offend you. It was just such a shock to me.", 5, , 0, 0
+Chris, "I was being judgmental without thinking about your point of view.", 5, , 0, 0
+Chris, "I'm sorry that I offended you. I'm working on being more understanding and empathetic.", 1, , 0, 0
+Bella, "It's okay. I forgive you. I know it's hard to see things from someone else's point of view.", 1, , 0, 3
+Chris, "Just because I haven't experienced something and don't see myself getting involved in that way, doesn't mean I should trash it.", 1, , 0, 0
+Chris, "I'm not sure why I felt the need be automatically defensive about it.", 1, , 0, 0
+Chris, "It's probably a lot of self-internalized hatred that is being severely misdirected.", 5, , 0, 0
+Chris, "I sincerely apologize.", 1, , 0, 0
+Bella, "It's alright. I'm glad you've learned something from our conversation today.", 1, , 0, 1
+Bella, "A little compassion can go a long way.", 4, , 0, 0
+Bella, "If you'd like to talk more about it later, here's my number.", 4, , 8, 0
+Bella, "That's a bit of a personal question, don'tcha think?", 1, , 0, 0
+Bella, "I mean.. I literally just met you.", 1, , 0, 0
 Chris, "Yeah, you're right. Sorry, that was out of line.", 0, , 0, 0
-Chris, "I guess I'm just curious about the whole process..", 5, R, 0, 0
-Bella, "Well.. to answer your question. Yes, I have.", 2, R, 0, 1
-Chris, "Woah.. what's it like?", 0, , 0, 0
-Bella, "It's surprisingly amazing. A little rough at first but you get used to it.", 2, R, 0, 2
-Bella, "Something about their eyes just gets me..", 2, R, 0, 2
-Chris, "I'd love for you to tell me more about it sometime.", 2, , 0, 0
-Bella, "I'd love to. You can call me anytime.", 1, R, 9, 1
-Chris, "Most definitely. The way they look at you, it's mesmerizing", 2, , 0, 0
-Bella, "I totally agree!", 2, R, 0, 5
-Bella, "The way their eyes look at you, it's as if they're staring into your soul.", 2, R, 0, 5
-Bella, "It's almost as if their eyes are the gateway to pure happiness.", 2, R, 0, 5
-Chris, "I've never met someone who could describe exactly how I feel.", 1, , 0, 0
-Chris, "I feel like we have a real connection here.", 2, , 0, 0
-Chris, "Please tell me it isn't just me feeling this..", 0, , 0, 0
-Bella, "No, I feel it too. I really want to get to know you more." 2, R, 0, 3
-Bella, "Give me a call sometime and let's hang out.", 2, R, 0, 3
-Bella, "It was nice meeting you, Chris", 2, R, 0, 0
-Chris, "It was nice meeting you too", 2, , 0, 0
-Chris, "*train arrives to station*", 0, , 0, 0
+Chris, "I guess I'm just curious about the whole thing..", 2, , 0, 0
+Bella, "That's understandable, it's natural to be curious.", 1, , 0, 1
+Bella, "Plus it means you're willing to learn instead of just being a complete jackass.", 1, , 0, 0
+Bella, "But I'll tell you what..", 1, , 0, 0
+Bella, "Here's my phone number. Give me a call and get to know me better. Then I'll give you the answer to that question.", 4, , 0, 1
+Bella, "Looks like we're here.", 1, , 0, 0
+Bella, "It was nice meeting you, Chris.", 4, , 0, 0
+Bella, "Hope to talk to you soon.", 4, , 0, 0
+Chris, "It was nice meeting you too.", 4, , 0, 0
+Chris, "*train arrives to station*", 1, , 0, 0
 TrainStation, DialogueTrainStation.txt, "", S, 0, 0
